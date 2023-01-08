@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="@dimen/_12cdp"
+        android:layout_marginHorizontal="@dimen/_4cdp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/PrimaryColor"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_18cdp"
+
+            >
+
+            <ImageView
+                android:layout_width="@dimen/_46cdp"
+                android:layout_height="@dimen/_46cdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_signal_cellular_connected_no_internet_4_bar_24"
+                app:tint="@color/white"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="اتصال به اینترنت رو چک کنید!"
+                style="@style/fontForHeaderWhite"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_18cdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_18cdp"
+                    android:layout_marginRight="@dimen/_8cdp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    style="@style/fontForNormalBlack"
+                    android:text="خروج"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tryA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_8cdp"
+                    android:layout_marginRight="@dimen/_18cdp"
+                    android:layout_weight="1"
+                    style="@style/fontForNormalBlack"
+                    android:text="تلاش دوباره"
+                    android:backgroundTint="@color/white"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
